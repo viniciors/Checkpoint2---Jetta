@@ -1,0 +1,113 @@
+section {
+    background: #000;
+    color: #fff;
+}
+
+section .primeira {
+    padding: 30px 0;
+}
+
+section .segunda {
+    padding-top: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div {
+    width: 45%;
+    min-width: 240px;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.container > div p {
+    font-size: 1rem;
+}
+
+.container > div h3 {
+    font-size: 1.4rem;
+    color: #609BEB;
+}
+
+.container > div h2 {
+    font-size: 2rem;
+}
+
+.container > div h2,p,h3 {
+    margin: 10px 0;
+}
+
+.container > div img .bulldog {
+    border-radius: 10px;
+}
+
+.container img {
+    max-width: 100%;
+    margin-left: 170px;
+}
+
+.section-desenho > h2{
+    text-align: center;
+}
+
+.segunda .container div .section-desenho p.comercial {
+    text-align: center;
+}
+
+button{
+    display: flex;
+    margin-left: 200px;
+}
+
+.segunda .container div button {
+    padding: 10px;
+    background: transparent;
+    color: orange;
+    border: 2px solid #609BEB;
+    transition: 0.6s;
+    margin-top: 85px;
+}
+
+.segunda .container div button:hover {
+    color: #609BEB;
+    border: 1px solid orange;
+}
+
+.segunda .container div button {
+    text-align: center;
+}
+
+.segunda .container div .section-desenho h2{
+    margin-top: 35px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .container div {
+        width: 80%;
+    }
+
+    section.primeira {
+        padding: 0;
+    }
+
+    section.segunda {
+        padding-top: 5px;
+    }
+
+    .segunda .container div.section-desenho {
+        margin-top: 50px;
+    }
+
+    p.comercial {
+        text-align: left;
+    }
+}

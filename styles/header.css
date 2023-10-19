@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background:#000 url('../images/Jetta.jpg')no-repeat center center;
+    background-size: cover;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header  div.header {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    border: 3px solid #fff;
+    min-width: 240px;
+    width: 55%;
+    max-width: 1000px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+span, strong {
+    color: orange;
+}
+
+@media screen and (max-width: 600px) {
+    header div.header {
+        width: 85%;
+        font-size: 0.9rem;
+    }
+}
